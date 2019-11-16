@@ -518,6 +518,10 @@ namespace HelloBot {
             case CarState.Car_SpinRight: Car_spinright(255, 255); break;
         }
     }
+	
+    export function Dance(): void {
+        Car_run(255, 255);
+    }
     
     //% blockId=HelloBot_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
     //% weight=92
