@@ -518,15 +518,6 @@ namespace HelloBot {
             case CarState.Car_SpinRight: Car_spinright(255, 255); break;
         }
     }
-	
-    //% blockId=HelloBot_Dance block="Dance"
-    //% weight=93
-    //% blockGap=10
-    //% color="#006400"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
-    export function Dance(): void {
-        Car_run(255, 255);
-    }
     
     //% blockId=HelloBot_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
     //% weight=92
@@ -670,6 +661,15 @@ namespace HelloBot {
         }
         return temp;
 
+    }
+	
+    //% blockId=HelloBot_Dance block="Dance"
+    //% weight=86
+    //% blockGap=10
+    //% color="#006400"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
+    export function Dance(): void {
+        Car_run(255, 255);
     }
 
 
